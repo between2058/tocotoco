@@ -2,7 +2,7 @@
   "name": "tocotoco",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "/",
   "dependencies": {
     "openai": "^4.64.1",
     "react": "^18.3.1",
