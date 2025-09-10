@@ -10,17 +10,17 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <nav className="bg-blue-600 p-4 text-white">
-          <div className="container mx-auto flex justify-between">
-            <h1 className="text-xl font-bold">罵完再說</h1>
+        <nav className="bg-gradient-to-r from-rose-400 to-lavender-400 p-4 text-white shadow-lg">
+          <div className="container mx-auto flex justify-between items-center">
+            <h1 className="text-xl font-bold">💕 罵完再說 💕</h1>
             <div className="space-x-4">
-              <Link to="/" className="hover:underline">首頁</Link>
-              <Link to="/vent" className="hover:underline">發洩</Link>
-              <Link to="/history" className="hover:underline">歷史</Link>
+              <Link to="/" className="hover:text-sky-200 transition-colors">首頁</Link>
+              <Link to="/vent" className="hover:text-sky-200 transition-colors">發洩</Link>
+              <Link to="/history" className="hover:text-sky-200 transition-colors">歷史</Link>
             </div>
           </div>
         </nav>
-        <main className="container mx-auto p-4">
+        <main className="container mx-auto p-6 max-w-6xl bg-white/80 backdrop-blur-sm rounded-lg shadow-xl">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/vent" element={<Vent />} />
