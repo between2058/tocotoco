@@ -35,7 +35,7 @@ const Vent = () => {
 
     const tempAssistantMessage = { 
       role: 'assistant', 
-      content: 'AI 正在思考中...', 
+      content: 'AI 正在承受你的攻擊，並且努力轉換中...', 
       loading: true 
     };
     setMessages(prev => [...prev, tempAssistantMessage]);
@@ -50,7 +50,7 @@ const Vent = () => {
       const apiMessages = [
         {
           role: 'system',
-          content: '你是一位情侶溝通專家。將用戶的情緒發洩轉化成有建設性、溫和的改善建議。保持正面、聚焦改善，100字以內。',
+          content: '你是一位情侶溝通專家。請將用戶的訊息轉譯成更溫和、建設性的表達方式。只回傳轉譯後的版本，不要添加額外建議、回應或解釋。保持原意，聚焦改善溝通。不用太冗長。',
         },
         ...newMessages.map(m => ({ role: m.role, content: m.content })),
       ];

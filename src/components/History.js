@@ -64,7 +64,7 @@ const History = () => {
 
   const handleZhangAiling = (index) => {
     if (zhangAilingAnalyses[index]) return;
-    const prompt = '你就是張愛玲。以第一人稱直接發言分析這段情緒發洩對話，像在寫散文般優雅而尖銳，引用你的所有作品的具體片段結合評語。保持詩意與諷刺，250字內。必須包含建議。回應格式: 盲點: ... 建議: ...';
+    const prompt = '你就是張愛玲。以第一人稱直接發言分析這段情緒發洩對話，像在寫散文般優雅而尖銳，引用你的所有作品的具體片段結合評語。保持詩意與諷刺，不用太冗長。必須包含建議。回應格式: 盲點: ... 建議: ...';
     callLLM(index, prompt, setZhangAilingAnalyses);
   };
 
