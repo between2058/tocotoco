@@ -19,11 +19,12 @@ const Vent = () => {
     const openai = new OpenAI({
       apiKey,
       baseURL: 'https://openrouter.ai/api/v1',
+      dangerouslyAllowBrowser: true,
     });
 
     try {
       const completion = await openai.chat.completions.create({
-        model: 'openai/gpt-4o-mini', // or user's choice
+        model: 'openrouter/sonoma-sky-alpha',
         messages: [
           {
             role: 'system',
