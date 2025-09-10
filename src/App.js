@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
+/* No App.css needed, using Tailwind */
 import Home from './components/Home';
 import Vent from './components/Vent';
 import Preview from './components/Preview';
