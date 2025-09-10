@@ -88,6 +88,11 @@ dist
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
+# Don't ignore static files for GitHub Pages deployment
+!static/
+!index.html
+!asset-manifest.json
+
 # vuepress build output
 .vuepress/dist
 

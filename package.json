@@ -2,7 +2,7 @@
   "name": "tocotoco",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/tocotoco",
+  "homepage": "https://between2058.github.io/tocotoco",
   "dependencies": {
     "openai": "^4.64.1",
     "react": "^18.3.1",
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.1"
   },
